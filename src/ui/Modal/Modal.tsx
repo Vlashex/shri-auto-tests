@@ -31,6 +31,7 @@ export const Modal: FC<Props> = ({ isOpen, children, onClose }) => {
                     [styles.backdropShown]: isOpen,
                 })}
                 onClick={handleBackdropClick}
+                data-testid="modal-backdrop"
             >
                 <div data-testid="modal" className={styles.modal} onClick={handleModalClick}>
                     {onClose && (

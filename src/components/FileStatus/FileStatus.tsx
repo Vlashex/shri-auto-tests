@@ -17,12 +17,12 @@ export const FileStatus: FC<Props> = ({ type, isActive }) => {
             {type === 'success' ? (
                 <>
                     <Typography>Обработан успешно</Typography>
-                    <Smile size={40} />
+                    <Smile size={40} data-testid="smile" />
                 </>
             ) : (
                 <>
                     <Typography>Не удалось обработать</Typography>
-                    <SmileSad size={40} />
+                    <SmileSad size={40} data-testid="smile-sad" />
                 </>
             )}
         </span>
