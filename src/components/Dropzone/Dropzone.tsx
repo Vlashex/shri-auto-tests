@@ -114,7 +114,7 @@ export const Dropzone: FC<Props> = ({ file, status, error, onFileSelect, onClear
         if (isProcessing) {
             return (
                 <div className={styles.fileProcessing}>
-                    <Loader />
+                    <Loader dataTestid="loader" />
                 </div>
             );
         }
@@ -131,7 +131,13 @@ export const Dropzone: FC<Props> = ({ file, status, error, onFileSelect, onClear
         }
 
         return (
-            <Button type="button" variant="upload" onClick={handleUploadClick} disabled={isProcessing}>
+            <Button
+                data-testid="upload-button"
+                type="button"
+                variant="upload"
+                onClick={handleUploadClick}
+                disabled={isProcessing}
+            >
                 Загрузить файл
             </Button>
         );
@@ -165,6 +171,7 @@ export const Dropzone: FC<Props> = ({ file, status, error, onFileSelect, onClear
                 [styles.dragActive]: isDragActive,
                 [styles.dragReject]: validationError,
             })}
+            data-testid="dropzone"
             onDragEnter={handleDragEnter}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}

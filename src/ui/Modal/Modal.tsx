@@ -32,7 +32,7 @@ export const Modal: FC<Props> = ({ isOpen, children, onClose }) => {
                 })}
                 onClick={handleBackdropClick}
             >
-                <div className={styles.modal} onClick={handleModalClick}>
+                <div data-testid="modal" className={styles.modal} onClick={handleModalClick}>
                     {onClose && (
                         <Button variant="clear" className={styles.closeButton} onClick={onClose}>
                             <Cross size={32} />
