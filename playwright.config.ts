@@ -8,5 +8,6 @@ export default defineConfig({
         viewport: { width: 1920, height: 1080 },
         ignoreHTTPSErrors: true,
         video: 'retain-on-failure',
+        screenshot: 'only-on-failure',
     },
 });

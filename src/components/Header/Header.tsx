@@ -4,7 +4,7 @@ import { Title } from './Title';
 
 export const Header = () => {
     return (
-        <header className={styles.header}>
+        <header className={styles.header} data-testid="header">
             <Title />
             <Navigation />
         </header>
