@@ -34,6 +34,7 @@ export default defineConfig(({ mode }) => {
             alias: {
                 '@utils': path.resolve(__dirname, 'src/utils'),
             },
+            exclude: ['e2e', 'node_modules'],
         },
     };
 });

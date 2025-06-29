@@ -86,7 +86,7 @@ export const GeneratePage = () => {
                     [styles.isGenerating]: isGenerating,
                 })}
             >
-                {isGenerating ? <Loader /> : 'Начать генерацию'}
+                {isGenerating ? <Loader dataTestid="loader" /> : 'Начать генерацию'}
             </Button>
 
             {successMessage && (

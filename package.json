@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "vite",
         "test": "vitest",
+        "test:e2e": "playwright test --ui",
         "test:ui": "vitest --ui",
         "test:coverage": "vitest run --coverage",
         "build": "tsc && vite build",
@@ -29,6 +30,7 @@
         "@types/react": "^18.2.64",
         "@types/react-dom": "^18.2.21",
         "@vitejs/plugin-react": "^4.2.1",
+        "@vitest/ui": "^3.2.4",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^10.1.5",
         "eslint-plugin-import": "^2.31.0",

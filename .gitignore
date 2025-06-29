@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+test-results
+
 .env
 
 # Editor directories and files
